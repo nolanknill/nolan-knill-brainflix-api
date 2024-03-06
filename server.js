@@ -10,6 +10,6 @@ app.get("/pets", (req, res) => {
     ]);
 })
 
-app.listen(5000, () => {
-    console.log("http://localhost:5000 is currently running the application");
+app.listen(5432, () => {
+    console.log("App is listening on http://localhost:5432");
 })
