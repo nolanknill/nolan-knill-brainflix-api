@@ -1,6 +1,15 @@
-const express = require('express')
+const express = require("express")
 const app = express();
 
-app.listen(8080, () => {
-    console.log("App is listening on http://localhost:8080");
+app.get("/pets", (req, res) => {
+    return res.json([
+        "Sophie",
+        "Zeus",
+        "Leeland",
+        "Kermit"
+    ]);
+})
+
+app.listen(5432, () => {
+    console.log("App is listening on http://localhost:5432");
 })
